@@ -1,8 +1,8 @@
-SRCS		=	src/* 
+SRCS		=	src/*.c 
 OBJS		= $(SRCS:%.c=%.o)
 
 NAME		=	try_lib.a
-HEADERS		=	include/*
+HEADERS		=	include/*.h
 
 all: $(NAME)
 
