@@ -1,11 +1,16 @@
 #ifndef CEXCEPTION_H
 # define CEXCEPTION_H
 
+#include <setjmp.h>
+
+
 typedef struct{
 	
 	char message[256];
 	unsigned char status;
 	void *data;
+	jmp_buf buf;
+	
 	
 }exception;
 
