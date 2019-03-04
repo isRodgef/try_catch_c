@@ -1,12 +1,12 @@
-SRCS		=	src/*.c 
+SRCS		=	src/cexception.c 
 OBJS		= $(SRCS:%.c=%.o)
 
 NAME		=	try_lib.a
-HEADERS		=	include/*.h
+HEADERS		=	include/cexception.h
 
 all: $(NAME)
 
-$(OBJ): $(FILES)
+$(OBJ):
 	gcc -c $(SRCS)
 	
 $(NAME): $(SRCS) $(HEADERS)
