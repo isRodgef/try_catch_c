@@ -7,14 +7,14 @@ HEADERS		=	include/cexception.h
 all: $(NAME)
 
 $(OBJS):
-	gcc -o src/cexception.o -I ./include/  -c src/cexecption.c
+	gcc -o src/cexception.o -I ./include/  -c src/cexception.c
 
 $(NAME): $(OBJS) $(HEADERS)
 	ar rcs $(NAME) $(OBJS)
 
-.PHONY:
-clean: .PHONY
-	make 
+
+clean: 
+	rm $(OBJS)
 fclean: clean
 	rm -f $(NAME)
 re:  fclean all
