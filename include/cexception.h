@@ -4,14 +4,12 @@
 typedef struct{
 	
 	char message[256];
-	int depth;
-	char status;
+	unsigned char status;
 	void *data;
 	
 }exception;
 
-void try();
-
-void catch(void (*fun_ptr)(exception) ,exception e);
+void try(void (*set_fun_ptr)(exception),(*get_fun_ptr)(exception), exception* e);
+void catch(void (*fun_ptr)(exception), exception e); 
  
 #endif
