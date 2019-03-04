@@ -14,7 +14,7 @@ typedef struct{
 	
 }exception;
 
-void try(void (*set_fun_ptr)(exception),(*get_fun_ptr)(exception), exception* e);
+void try(int cond,void (*to_execute),void (*set_fun_ptr)(exception),(*get_fun_ptr)(exception), exception* e);
 void catch(void (*fun_ptr)(exception), exception e); 
  
 #endif
