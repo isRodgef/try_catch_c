@@ -12,6 +12,22 @@ void to_exec()
   printf("works")
 }
 
+void set(Exception e){
+}
+
+void get(Exception e){
+}
+
+int main()
+{
+  Exception *e = malloc_exception(sizof e)
+   char *p = NULL;;
+   if (p == NULL){
+
+    try(to_exec,set,get,e)
+    }
+   
+}
 
 try(max < real_max)
 
