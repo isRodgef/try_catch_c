@@ -29,6 +29,5 @@ int main()
    
 }
 
-try(max < real_max)
 
 ```
