@@ -4,10 +4,15 @@ try and catch staments in c,in an attempt to emulate behaviour of oop languages.
 Possible usage
 
 ```
+int max = 9;
+int real_max = 11;
+
 void to_exec()
 {
-  
+  printf("works")
 }
 
+
+try(max < real_max)
 
 ```
